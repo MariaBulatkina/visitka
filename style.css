@@ -217,7 +217,8 @@ opacity: 1;
   opacity: 1;
 }
 .main__mail h2 {
-  margin: 180px 50px;
+  text-align: center;
+  margin: 180px auto;
 }
 .main__hobby-title,
 .main__relax h3 {

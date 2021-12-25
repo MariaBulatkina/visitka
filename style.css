@@ -54,8 +54,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
   }
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-image: url(img/background.webp);  
+  font-family: 'Work Sans';
+  background-image: url(img/background.jpeg);  
   font-size: 20px;
 }
 h1,
@@ -74,17 +74,17 @@ h3 {
 p {
   text-align: center;
   margin: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 a:hover {
-  color: rgb(213,198,169);
+  color: rgb(126,154,227);
 }
 header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  gap: 4px;
-  margin: 4px 0;
+  gap: 2px;
+  margin: 2px 0;
 }
 .header__name {
  height: 70px;
@@ -109,8 +109,8 @@ header {
 .main__body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  gap: 4px;
-  margin-bottom: 4px;
+  gap: 2px;
+  margin-bottom: 2px;
 
 }
 @media (max-width: 340px) {
@@ -147,7 +147,7 @@ opacity: 1;
   border: 1px solid #dbe3f0;
   border-radius: 20px;
   box-sizing: border-box;
-  background: rgb(213,198,169);
+  background: rgb(216,227,232);
   box-shadow: 0 20px 40px rgb(0 0 0 / 6%);
 }
 .main__portfolio {
@@ -156,8 +156,8 @@ opacity: 1;
 .main__contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 4px;
-  margin-bottom: 4px;
+  gap: 2px;
+  margin-bottom: 2px;
   height: 80px;
 }
 .main__contact-inst,
@@ -169,7 +169,7 @@ opacity: 1;
   position: relative;
 }
 .gray {
-  background-color: rgb(222,215,207);
+  background-color: rgb(216,227,232);
   position: relative;
 }
 @media (max-width: 340px) {
@@ -222,19 +222,19 @@ opacity: 1;
 }
 .main__hobby-title,
 .main__relax h3 {
-  background-color: cornsilk;
+  background-color: rgb(216,227,232);
   padding: 10px;
   border-radius: 10px;
   }
 footer {
-  background-color: rgb(222,215,207);
+  background-color: rgb(216,227,232);
   text-align: center;
  
 }
 .footer__body {
   width: 100%;
   display: block;
-  margin: 4px 0;
+  margin: 2px 0;
   height: 60px;
   padding: 10px 0;
 }
@@ -283,10 +283,10 @@ button:hover {
   background-position: right center;
 }
 .price__list li:hover {
-  color:cornsilk
+  color:rgb(126,154,227);
 }
 .skills__items li:hover {
-color:rgb(138, 100, 99);
+color:rgb(126,154,227);
 }
 .portfolio {
   background-color: rgb(216,227,232);
@@ -299,10 +299,13 @@ color:rgb(138, 100, 99);
   margin-bottom: 60px;
 }
 .portfolio__card {
-  position: relative;
-  
+  position: relative; 
+  overflow: hidden; 
 }
-
+.portfolio__card:hover a img {
+  transform: translateY(15px) scale(1.1);
+  transition: all .5s ease-in;
+}
 @media (max-width: 376px) {
   .portfolio {
     padding: 0;
